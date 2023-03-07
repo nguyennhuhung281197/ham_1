@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>CHUYỂN NHIỆT ĐỘ F SANG ĐỘ C</h1>
+<input type = "number" id = "chay" placeholder="nhap do F"
+oninput="doF(this.value)" onchange="doF(this.value)">
+<p>CHUYEN DO C <span id = "output"></span></p>
+</body>
+</html>
+<script>
+    function doF(value) {
+        value = parseFloat(value);
+        document.getElementById("output").innerHTML=(value-32)/1.8;
+    }
+
+</script>
